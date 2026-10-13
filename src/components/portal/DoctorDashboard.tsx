@@ -220,7 +220,7 @@ export const DoctorDashboard: React.FC<DoctorDashboardProps> = ({
             <span className="bg-teal-500/30 text-teal-200 border border-teal-400/30 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider">
               Doctor Clinic Portal
             </span>
-            <span className="text-xs text-teal-300">Khadakpada, Kalyan West</span>
+            <span className="text-xs text-teal-300">Gol Maidan, Sidhi Vinayak Nagar, Ulhasnagar</span>
           </div>
           <h1 className="font-heading font-extrabold text-2xl sm:text-3xl mt-1 text-white">
             Welcome, {credentials.clientName}

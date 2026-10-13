@@ -2,12 +2,17 @@ import { Doctor, Service, GalleryItem, Appointment, ScheduleConfig, ClientCreden
 
 export const CLINIC_INFO = {
   name: "Amazing Smile Dental Care",
-  tagline: "Advanced & Gentle Dental Care in Kalyan West",
+  tagline: "Advanced & Gentle Dental Care in Ulhasnagar",
   leadDoctor: "Dr. Manish Gangwani",
   coDoctor: "Dr. Bhriti Gangwani",
   experienceYears: 12,
-  address: "Near Union Bank Aarti Nagari, Khadakpada, Kalyan West, Kalyan, Maharashtra 421301",
-  landmark: "Near Union Bank Aarti Nagari & University of Mumbai Kalyan Sub-Center",
+  address: "Gol maidan, Sidhi Vinayak Nagar, Ulhasnagar, Maharashtra 421002",
+  shortAddress: "Gol Maidan, Sidhi Vinayak Nagar, Ulhasnagar",
+  area: "Gol Maidan",
+  locality: "Sidhi Vinayak Nagar, Ulhasnagar",
+  city: "Ulhasnagar, Maharashtra",
+  pincode: "421002",
+  landmark: "Near Gol Maidan, Sidhi Vinayak Nagar",
   phone: "+91 98454 42734",
   secondaryPhone: "+91 98200 12845",
   email: "care@amazingsmiledental.in",
@@ -33,7 +38,7 @@ export const DOCTORS: Doctor[] = [
       "Fixed Prosthodontics & Bridges",
       "Impacted Tooth Extraction"
     ],
-    bio: "With over 12 years of clinical excellence, Dr. Manish Gangwani is known across Kalyan West for his calm demeanor, precision-guided dentistry, and dedication to painless procedures.",
+    bio: "With over 12 years of clinical excellence, Dr. Manish Gangwani is known across Ulhasnagar for his calm demeanor, precision-guided dentistry, and dedication to painless procedures.",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80"
   },
   {
@@ -448,7 +453,7 @@ export const INITIAL_APPOINTMENTS: Appointment[] = [
 export const PATIENT_REVIEWS = [
   {
     id: "rev-1",
-    author: "Kavita R. (Kalyan West)",
+    author: "Kavita R. (Ulhasnagar)",
     rating: 5,
     date: "2 weeks ago",
     text: "Had a wonderful painless root canal treatment done by Dr. Manish Gangwani! I was terrified of dental chairs, but his soft-spoken approach and gentle hands made the entire RCT comfortable. The clinic is spotlessly clean and modern.",
@@ -459,7 +464,7 @@ export const PATIENT_REVIEWS = [
     author: "Prashant Nair",
     rating: 5,
     date: "1 month ago",
-    text: "Amazing Smile Dental Care is hands down the best dental clinic in Khadakpada. Dr. Bhriti Gangwani helped me with smile designing and veneers. Very polite staff, transparent rates, and no false promises. Truly grateful!",
+    text: "Amazing Smile Dental Care is hands down the best dental clinic near Gol Maidan. Dr. Bhriti Gangwani helped me with smile designing and veneers. Very polite staff, transparent rates, and no false promises. Truly grateful!",
     highlight: "Exceptional cosmetic smile makeover"
   },
   {

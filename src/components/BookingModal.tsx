@@ -592,7 +592,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
                 <div className="pt-2 border-t border-slate-200 text-[11px] text-slate-500 flex items-start gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-teal-600 shrink-0 mt-0.5" />
-                  <span>{CLINIC_INFO.address} (Near Union Bank Aarti Nagari)</span>
+                  <span>{CLINIC_INFO.address}</span>
                 </div>
               </div>
 

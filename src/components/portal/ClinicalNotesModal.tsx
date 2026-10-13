@@ -318,7 +318,7 @@ export const ClinicalNotesModal: React.FC<ClinicalNotesModalProps> = ({
                 className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 font-semibold"
               />
               <p className="text-[10px] text-slate-400 mt-1">
-                Stamp: Amazing Smile Dental Care, Khadakpada, Kalyan West
+                Stamp: Amazing Smile Dental Care, Gol Maidan, Sidhi Vinayak Nagar, Ulhasnagar
               </p>
             </div>
           </div>

@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             {/* Trust Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-100/80 border border-teal-200 text-teal-800 text-xs sm:text-sm font-semibold tracking-wide shadow-xs">
               <span className="flex h-2 w-2 rounded-full bg-teal-600 animate-pulse"></span>
-              <span>Khadakpada, Kalyan West • 12+ Years Clinical Excellence</span>
+              <span>Gol Maidan, Sidhi Vinayak Nagar, Ulhasnagar • 421002</span>
               <span className="hidden sm:inline text-teal-500">|</span>
               <a
                 href={CLINIC_INFO.googleMapsUrl}
@@ -177,7 +177,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               {/* Landmark pill */}
               <div className="absolute -top-4 -right-4 hidden sm:flex items-center gap-2 bg-slate-900 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-lg">
                 <MapPin className="w-3.5 h-3.5 text-teal-400" />
-                <span>Near Union Bank Aarti Nagari</span>
+                <span>Gol Maidan, Sidhi Vinayak Nagar</span>
               </div>
 
             </div>

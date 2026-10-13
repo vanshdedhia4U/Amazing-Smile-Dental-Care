@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortal, onOpenBooking }) =
               Ready for a Brighter, Healthier Smile?
             </h3>
             <p className="text-sm text-teal-100 max-w-xl mt-1">
-              Book your consultation with Dr. Manish Gangwani or Dr. Bhriti Gangwani at Amazing Smile Dental Care in Kalyan West today.
+              Book your consultation with Dr. Manish Gangwani or Dr. Bhriti Gangwani at Amazing Smile Dental Care in Ulhasnagar today.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
@@ -58,13 +58,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortal, onOpenBooking }) =
                   Amazing Smile
                 </div>
                 <div className="text-[10px] font-bold text-teal-400 uppercase tracking-wider -mt-1">
-                  Dental Care • Kalyan West
+                  Dental Care • Ulhasnagar
                 </div>
               </div>
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed">
-              Premier multi-specialty dental clinic in Khadakpada, Kalyan West. Specializing in single-sitting rotary root canal treatments, implants, aesthetic veneers, and gentle dentistry.
+              Premier multi-specialty dental clinic in Ulhasnagar (near Gol Maidan). Specializing in single-sitting rotary root canal treatments, implants, aesthetic veneers, and gentle dentistry.
             </p>
 
             <div className="pt-2 flex items-center gap-2 text-xs text-slate-400">
@@ -136,7 +136,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortal, onOpenBooking }) =
             <div className="pt-2 text-xs">
               <div className="text-slate-400 flex items-start gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5" />
-                <span>Near Union Bank Aarti Nagari, Khadakpada, Kalyan West 421301</span>
+                <span>Gol maidan, Sidhi Vinayak Nagar, Ulhasnagar, Maharashtra 421002</span>
               </div>
             </div>
           </div>

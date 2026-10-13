@@ -21,7 +21,7 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onSelectDoctorTo
             Meet the Dentists Caring for Your Smile
           </h2>
           <p className="mt-3 text-base text-slate-600">
-            Backed by over a decade of patient trust in Kalyan West, our doctors bring clinical mastery, gentle communication, and the latest treatment techniques to every appointment.
+            Backed by over a decade of patient trust in Ulhasnagar, our doctors bring clinical mastery, gentle communication, and the latest treatment techniques to every appointment.
           </p>
         </div>
 

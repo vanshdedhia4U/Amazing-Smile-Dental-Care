@@ -15,7 +15,7 @@ export const ReviewsSection: React.FC = () => {
               <span>Verified Google Reviews</span>
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Loved by Families Across Kalyan
+              Loved by Families Across Ulhasnagar
             </h2>
             <p className="mt-2 text-base text-slate-600 max-w-2xl">
               Real stories from patients who experienced our painless root canal treatments, friendly smile makeovers, and hygienic clinic.

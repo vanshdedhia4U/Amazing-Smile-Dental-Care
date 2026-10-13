@@ -18,7 +18,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
             <span>Visit Amazing Smile Dental Care</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Conveniently Located in Khadakpada, Kalyan West
+            Conveniently Located at Gol Maidan, Ulhasnagar
           </h2>
           <p className="mt-2 text-base text-slate-600">
             Easily accessible via auto-rickshaws, city buses, or personal car with nearby parking space.
@@ -36,15 +36,41 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                 <div className="w-10 h-10 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-700 shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <div>
-                  <h3 className="font-heading font-bold text-slate-900 text-base">
-                    Clinic Address
+                <div className="flex-1">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-teal-700">Official Clinic Location</div>
+                  <h3 className="font-heading font-extrabold text-slate-900 text-lg">
+                    {CLINIC_INFO.name}
                   </h3>
-                  <p className="text-sm text-slate-600 mt-1 leading-relaxed">
-                    {CLINIC_INFO.address}
-                  </p>
-                  <div className="mt-2 text-xs font-medium text-teal-800 bg-teal-50 px-2.5 py-1 rounded-md inline-block">
-                    Landmark: {CLINIC_INFO.landmark}
+                  
+                  {/* Detailed address layout */}
+                  <div className="mt-2 text-sm text-slate-700 font-medium leading-relaxed bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                    <div className="font-bold text-slate-900 text-base">
+                      Gol Maidan, Sidhi Vinayak Nagar
+                    </div>
+                    <div className="text-slate-600 mt-0.5">
+                      Ulhasnagar, Maharashtra
+                    </div>
+                    <div className="text-slate-600">
+                      Pincode: <strong>421002</strong>
+                    </div>
+                  </div>
+
+                  {/* Landmark chip */}
+                  <div className="mt-3 text-xs font-medium text-teal-900 bg-teal-50 px-3 py-1.5 rounded-lg border border-teal-200/80 flex items-center gap-1.5">
+                    <span className="font-bold text-teal-800">Landmark:</span>
+                    <span>Near Gol Maidan, Sidhi Vinayak Nagar</span>
+                  </div>
+
+                  {/* Address attribute pills */}
+                  <div className="mt-3 grid grid-cols-2 gap-2 text-[11px] text-slate-600">
+                    <div className="bg-slate-100 p-2 rounded-lg">
+                      <span className="text-slate-400 block text-[9px] uppercase font-bold">Area / Landmark</span>
+                      <strong className="text-slate-900">Gol Maidan</strong>
+                    </div>
+                    <div className="bg-slate-100 p-2 rounded-lg">
+                      <span className="text-slate-400 block text-[9px] uppercase font-bold">City & Pincode</span>
+                      <strong className="text-slate-900">Ulhasnagar – 421002</strong>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -57,7 +83,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                   className="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-semibold text-xs shadow-xs transition-colors"
                 >
                   <Navigation className="w-3.5 h-3.5" />
-                  <span>Get Directions on Maps</span>
+                  <span>Navigate via Google Maps</span>
                 </a>
               </div>
             </div>
@@ -147,7 +173,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                   </div>
                   <div>
                     <div className="font-bold text-xs text-slate-900">Amazing Smile Dental Care</div>
-                    <div className="text-[10px] text-teal-700 font-medium">Khadakpada • 4.9 ★ Rating</div>
+                    <div className="text-[10px] text-teal-700 font-medium">Ulhasnagar • 4.9 ★ Rating</div>
                   </div>
                 </div>
               </div>
@@ -170,15 +196,15 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-600">
               <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
                 <div className="font-bold text-slate-900 mb-0.5">By Auto / Cab</div>
-                <div>5 to 7 mins from Kalyan Railway Station (West) via Khadakpada main road.</div>
+                <div>Minutes away from Ulhasnagar Railway Station via Gol Maidan main road.</div>
               </div>
               <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
-                <div className="font-bold text-slate-900 mb-0.5">By Bus</div>
-                <div>KDMT buses stop near Aarti Nagari junction / Khadakpada circle.</div>
+                <div className="font-bold text-slate-900 mb-0.5">By Bus / Transit</div>
+                <div>Frequent auto-rickshaws and local transit connect to Gol Maidan & Sidhi Vinayak Nagar.</div>
               </div>
               <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
                 <div className="font-bold text-slate-900 mb-0.5">Parking</div>
-                <div>Convenient roadside and building premise parking available for two & four wheelers.</div>
+                <div>Convenient roadside and complex parking available for two & four wheelers.</div>
               </div>
             </div>
 

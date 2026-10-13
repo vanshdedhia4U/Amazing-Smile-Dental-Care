@@ -17,8 +17,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenPortal }) =
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-teal-300" />
-              Khadakpada, Kalyan West (Near Union Bank Aarti Nagari)
+              <MapPin className="w-3.5 h-3.5 text-teal-300 shrink-0" />
+              <span>Gol maidan, Sidhi Vinayak Nagar, Ulhasnagar, Maharashtra 421002</span>
             </span>
             <span className="hidden md:flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-teal-300" />
@@ -59,7 +59,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenPortal }) =
               <div className="text-xs font-semibold tracking-wider text-teal-700 uppercase -mt-0.5 flex items-center gap-1">
                 <span>Dental Care</span>
                 <span className="inline-block w-1 h-1 rounded-full bg-teal-500"></span>
-                <span className="text-slate-500 font-normal">Kalyan West</span>
+                <span className="text-slate-500 font-normal">Ulhasnagar</span>
               </div>
             </div>
           </a>
