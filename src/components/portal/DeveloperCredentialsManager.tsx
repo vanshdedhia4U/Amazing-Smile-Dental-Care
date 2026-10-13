@@ -53,10 +53,16 @@ export const DeveloperCredentialsManager: React.FC<DeveloperCredentialsManagerPr
   };
 
   const handleCopyShareableText = () => {
-    const shareText = `Amazing Smile Dental Care - Doctor Clinic Portal Access Details:\n\nPortal URL: ${window.location.origin}\nDoctor Username: ${form.clientUsername}\nTemporary Password: ${form.clientPassword}\nQuick Access PIN: ${form.clientPin}\n\nPlease keep these credentials confidential.`;
-    navigator.clipboard.writeText(shareText);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
+    try {
+      const shareText = `Amazing Smile Dental Care - Doctor Clinic Portal Access Details:\n\nPortal URL: ${window.location.origin}\nDoctor Username: ${form.clientUsername}\nTemporary Password: ${form.clientPassword}\nQuick Access PIN: ${form.clientPin}\n\nPlease keep these credentials confidential.`;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(shareText).catch(() => {});
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch (e) {
+      setCopied(true);
+    }
   };
 
   return (

@@ -60,16 +60,18 @@ export const DoctorDashboard: React.FC<DoctorDashboardProps> = ({
   const [walkinSlot, setWalkinSlot] = useState<string>('11:00 AM');
   const [walkinDoctor, setWalkinDoctor] = useState<string>('dr-manish');
 
-  // Filter appointments by selected date
-  const dateAppointments = appointments.filter(a => a.date === selectedDate);
+  // Safe appointments array
+  const safeAppointments = Array.isArray(appointments) ? appointments : [];
+  const dateAppointments = safeAppointments.filter(a => a && a.date === selectedDate);
 
   // Filter by search & status
   const filteredAppointments = dateAppointments.filter(a => {
+    if (!a) return false;
     const matchesSearch =
-      a.patientName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      a.patientPhone.includes(searchQuery) ||
-      a.serviceName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      a.id.toLowerCase().includes(searchQuery.toLowerCase());
+      (a.patientName || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (a.patientPhone || '').includes(searchQuery) ||
+      (a.serviceName || '').toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (a.id || '').toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesStatus = statusFilter === 'all' ? true : a.status === statusFilter;
     return matchesSearch && matchesStatus;
@@ -445,7 +447,7 @@ export const DoctorDashboard: React.FC<DoctorDashboardProps> = ({
                         {appt.timeSlot}
                       </div>
                       <div className="text-[10px] text-teal-700 font-bold uppercase mt-0.5">
-                        {appt.visitType.replace('-', ' ')}
+                        {(appt.visitType || 'consultation').replace('-', ' ')}
                       </div>
                     </div>
 
