@@ -86,6 +86,25 @@
       });
     </script>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      // Automatic fallback for static hosts (GitHub Pages) serving root index.html directly
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (!window.__APP_MOUNTED__ || !root || !root.firstElementChild) {
+          console.log('Activating compiled static bundle fallback...');
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './assets/index-02iLyj01.css';
+          document.head.appendChild(link);
+
+          var s = document.createElement('script');
+          s.type = 'module';
+          s.crossOrigin = 'anonymous';
+          s.src = './assets/index-hIFO_Ra8.js';
+          document.body.appendChild(s);
+        }
+      }, 400);
+    </script>
   </body>
 </html>
 

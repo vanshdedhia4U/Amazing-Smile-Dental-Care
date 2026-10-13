@@ -8,6 +8,7 @@ if (rootElement) {
   try {
     const createRoot = (ReactDOM as any).createRoot || (ReactDOM as any).default?.createRoot || (ReactDOM as any);
     const root = createRoot(rootElement);
+    (window as any).__APP_MOUNTED__ = true;
     root.render(<App />);
   } catch (err: any) {
     console.error('Fatal mount error in main.tsx:', err);
